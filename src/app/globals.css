@@ -1,0 +1,112 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light Theme (Red on Light Background) */
+    --background: 0 0% 96%; /* Off-white/very light grey */
+    --foreground: 0 0% 10%; /* Dark grey/black for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 65% 50%; /* Red */
+    --primary-foreground: 0 0% 100%; /* White text on red */
+
+    --secondary: 0 0% 90%; /* Light grey for secondary elements */
+    --secondary-foreground: 0 0% 15%; /* Dark text on secondary */
+
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 55% 45%; /* Darker/Muted Red */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    --destructive: 0 70% 55%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 90%;
+    --ring: 0 65% 55%; /* Red for rings */
+    
+    --chart-1: 0 70% 60%;
+    --chart-2: 0 60% 50%;
+    --chart-3: 0 50% 40%;
+    --chart-4: 0 75% 65%;
+    --chart-5: 0 55% 55%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 94%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 0 65% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 55% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 0 65% 55%;
+  }
+
+  .dark {
+    /* Dark Theme (Red & Black) */
+    --background: 0 0% 8%; /* Very dark grey / Off-black */
+    --foreground: 0 0% 90%; /* Light grey / Off-white for text */
+
+    --card: 0 0% 12%; /* Slightly lighter than background */
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 0 70% 55%; /* Vibrant Red */
+    --primary-foreground: 0 0% 100%; /* White text on red */
+
+    --secondary: 0 0% 18%; /* Darker grey for secondary elements */
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 22%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 60% 50%; /* Slightly different/muted Red for hovers, selections */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    --destructive: 0 75% 60%; /* Brighter/Alert Red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 70% 60%; /* Primary red for rings */
+    
+    --chart-1: 0 70% 55%;
+    --chart-2: 0 60% 50%;
+    --chart-3: 0 50% 45%;
+    --chart-4: 0 75% 60%;
+    --chart-5: 0 55% 40%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 60% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
